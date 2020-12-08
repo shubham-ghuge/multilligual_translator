@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* CSS HEX */
+    --jet: #363636ff;
+    --gunmetal: #242f40ff;
+    --mindaro: #dcf763ff;
+    --pale-silver: #bfb7b6ff;
+    --cultured: #f1f2eeff;
+    --blue-ncs: #3685b5ff;
+    --white: #ffffffff;
+    color: var(--blue-ncs);
+
+    background-color: var(--jet);
+    font-family: 'inter',sans-serif;
+
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+i{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
