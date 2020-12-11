@@ -11,26 +11,177 @@ body{
     --cultured: #f1f2eeff;
     --blue-ncs: #3685b5ff;
     --white: #ffffffff;
-    color: var(--blue-ncs);
-
-    background-color: var(--jet);
-    font-family: 'inter',sans-serif;
-
+    font-family: 'Source Serif Pro', serif;
 }
-a{
-    color: var(--white);
-    text-decoration: none;
+h1{
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Source Serif Pro', serif;
 }
-ul{
-    list-style: none;
+.dictionary{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2rem 4rem;
 }
-i{
+.quote{
+    height: 100%;
+    width: 50vw;
+    font-family: 'Source Serif Pro', serif;
+    padding: 2rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadce0;
+    border-radius: .5rem;
+    box-shadow:  5px 5px 10px #ebebeb, 
+             -5px -5px 10px #ffffff;
+}
+.quote .word{
+    display: flex;
+    flex-direction: column;
+}
+.quote .word i{
     cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid var(--pale-silver);
+    padding: .7rem .6rem ;
+    color: #008cff;
+    border-radius: 50%;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
+.quote .word h2{
+    vertical-align: middle;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 1rem;
 }
-nav ul{
+.quote .word span{
+    color:#70757a;
+    font-size: 1.2rem;
+    margin: 0 0 0 4.1rem;
+}
+.quote .meaning{
+    /* border: 1px solid black; */
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+.quote span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 .3rem 0 0;
+}
+.marathi{
+    color: #3c4043;
+}
+.working{
+    padding: 1rem 3rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.working h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.working h3 span{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.main-working{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1rem;
+}
+.main-working textarea{
+    height: 10vh;
+    width: 25vw;
+    padding: 1rem;
+    resize: none; 
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin:  1rem;
+    box-shadow:  5px 5px 10px #ebebeb, 
+    -5px -5px 10px #cccccc60;
+}
+.main-working textarea:focus{
+    border: 2px solid rgb(0, 183, 255);
+    box-shadow:  5px 5px 10px rgb(141, 223, 255), 
+    -5px -5px 10px rgb(92, 209, 255);
+}
+.main-working textarea:disabled{
+    background-color: #ffffff;
+    color: #000000;
+}
+.main-working select{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+.main-working button{
+    font-size: 1.5rem;
+    padding: .3rem;
+    outline: none;
+}
+
+@media all and (max-width:500px){
+    h1{
+        margin: 1rem 0 0;
+        font-size: 2rem;
+    }
+    .dictionary{
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+    .quote{
+        height: 100%;
+        width: 100vw;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: .5rem;
+    }
+    .quote .word i{
+        font-size: 1.3rem;
+        padding: .7rem .6rem ;
+    }
+    .quote .word h2{
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+    .quote .word span{
+        font-size: .9rem;
+        margin: -.5rem 0 0 3rem;
+    }
+    .quote .meaning{
+        padding: .8rem 0;
+        font-size: 1rem;
+    }
+    .quote span{
+        font-size: 1.2rem;
+    }
+    .working{
+        padding: 1rem;
+    }
+    .working h3{
+        font-size: 1.3rem;
+    }
+    .working h3 span{
+        font-size: 1.5rem;
+    }
+    .main-working{
+        flex-wrap: wrap;
+    }
+    .main-working textarea{
+        height: 10vh;
+        width: 80vw;
+        padding: 1rem;
+        font-size: .8rem;
+        margin: 1rem;
+    }   
 }

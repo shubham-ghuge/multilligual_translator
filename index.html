@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="funtranslator,valarian language,dothrakhi,neog camp project">
     <meta name="description" content="This Project was done for practise purpose in neog camp.It provides functionality of tranlation from english to fun language such as valerian,dothrakhi and other languages">
-    <title>Fun API</title>
+    <title>polyglotBot</title>
     <!-- preloadings -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -17,33 +17,55 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <!-- logo and  -->
-        <nav>
-            <a href="#">Fun Translator</a>
-            <ul>
-                <li><i class="fas fa-moon"></i> <i class="fas fa-sun"></i></li>
-                <li><a href="#"><span><i class="fas fa-user-circle"></i></span>about creator</a></li>
-            </ul>
-        </nav>
+    <header>        
+        <h1>What is Polyglot-Bot?</h1>
     </header>
     <main>
-        <h1>Translate </h1>
-        <!-- form for translation,language selection -->
-        <textarea name="" id="txt-input" cols="30" rows="10"></textarea>
-        <select name="translate_lang" id="t_lang">
-            <option value="dothraki">dothraki</option>
-            <option value="valyrian">valyrian</option>
-            <option value="groot">groot</option>
-            <option value="pirate">pirate</option>
-            <option value="yoda">yoda</option>
-        </select>
-        <button id="btn-submit">Translate</button>
-        <textarea name="" id="txt-output" cols="30" rows="10"></textarea>
-        <div class="" id="err"></div>
+        <section class="dictionary">
+            <div class="quote">
+                <div class="word">
+                    <div style="display: flex;">
+                        <i class="fas fa-volume-up" onclick="playAudio('./assets/sound/polyglot.mp3')"></i><h2>polyglot</h2>
+                    </div>
+                    <span>ˈपॉलिग्‌लॉट्</span>
+                </div>
+                <div class="meaning">
+                    <span>(adj.)</span>Knowing or written in more than one language <br>
+                    एक से अधिक भाषा का ज्ञान या उसमें लेखन; बहुभाषी
+                </div>
+            </div>
+            <div class="quote">
+                <div class="word">
+                    <div style="display: flex;">
+                        <i class="fas fa-volume-up" onclick="playAudio('./assets/sound/bot.mp3')"></i><h2>Bot</h2>
+                    </div>
+                    <span>ˈबॉट</span>
+                </div>
+                <div class="meaning">
+                    <span>(n.)</span>An autonomous program on the internet or another network that can interact with systems or users.
+                </div>
+            </div>
+        </section>
+        <section class="working">
+            <h3>So <span>Polyglot-Bot</span> is a translator who currently knows <span>dothraki, valyrian, groot, pirate & yoda</span> languages.</h3>
+            <!-- form for translation,language selection -->
+            <div class="main-working">
+                <textarea id="txt-input" placeholder="Enter Text You want to translate"></textarea>
+                <select name="translate_lang" id="t_lang">
+                    <option  hidden selected>Select Language..</option>
+                    <option value="dothraki">dothraki</option>
+                    <option value="valyrian">valyrian</option>
+                    <option value="groot">groot</option>
+                    <option value="pirate">pirate</option>
+                    <option value="yoda">yoda</option>
+                </select>
+                <button id="btn-submit">Translate</button>
+                <textarea id="txt-output" placeholder="Translated text will appear here" disabled></textarea>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- creator name -->
