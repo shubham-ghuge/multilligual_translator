@@ -125,19 +125,6 @@ h1{
     font-size: 1.5rem;
     margin: 1rem;
 }
-.main-working select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: #34495e;
-    cursor: pointer;
-    pointer-events: none;
-    -webkit-transition: .25s all ease;
-    -o-transition: .25s all ease;
-    transition: .25s all ease;
-  }
 .main-working button{
     font-size: 1.5rem;
     padding: .5rem .8rem;
@@ -208,3 +195,48 @@ h1{
         margin: 1rem;
     }   
 }
+/* footer */
+
+  footer{    
+    font-family: 'Source Serif Pro', serif;
+    text-align:center;
+    margin:1rem 0 0 0;
+    color:#000;
+  }
+  footer i{
+    verticle-align:middle;
+    font-size:2rem;
+  }
+  footer ul{
+    margin: 1rem 0 0 0;
+    list-style:none; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  footer ul li a{
+    background: -webkit-linear-gradient(to bottom,#371aa1,#2387f2);
+  background: linear-gradient(to bottom,#371aa1,#2387f2); 
+    color:transparent;
+    -webkit-background-clip:text;
+    text-decoration:none;
+    margin: 0 0 0 1rem;
+    font-size:2rem;
+  }
+  footer ul li a i{
+    font-size:2rem;
+  }
+  footer ul li a:hover,footer ul li a:active{
+    background: -webkit-linear-gradient(to left,#d152f9,#6f54f8);
+  background: linear-gradient(to left,#d152f9,#6f54f8); 
+    color:transparent;
+    -webkit-background-clip:text;
+  }
+  @media all and (min-width:768px){
+    footer ul li a{
+        font-size:3rem;
+    }
+    footer ul li a i{
+        font-size:3rem;
+    }
+  }
